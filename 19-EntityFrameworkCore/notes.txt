@@ -1,0 +1,52 @@
+Entity Framework Core (EF Core) /ORM
+
+Orm temel olarak veritabanýnda yer alan tablo ve alanlarý nesne olarak kullanmamýza imkan veren bir yazýlým mimarisidir.
+
+Orm iliskisel veritabaný ile nesneye yönelik progrlama (oop) arasýnda bir köprü görevi görür. Bu köprü, db bilgilerimizi yönetmek için nesne modellerini kullandýðýmýz bir yapýdýr.
+
+Kýsaca veritabanýna nesnelerimizi baðlayan ve bizim için veri alýþverisi yapan Microsoft tarafýndan geliþtirilmiþ bir frameworktür.
+
+EF Ado.Net alt yapýsýný kullanýr.
+
+EF ile 3 farklý yöntemde proje geliþtirebiliriz:
+
+1-Code First
+Bu yöntemde classlarýmýzý uygulama tarafýnda oluþtururuz. DB bu classlar üzerinden üretilir.
+
+2-Model First
+Bu yöntem VS üzerinde boþ bir model dosyasý(.edmx) eklenerek db'yi bu model üzerinden tasarlamamýzý saðlar.
+
+
+3-Database First (DB First)
+Bu yöntem önceden oluþturulmus bir db olan projelerde, db'ye baðlanarak ilgili classlarýmýzýn EF aracýlýðý ile uygulama tarafýnda oluþturulmasýný saðlar.
+
+
+Entity Framework Core Code First Kullanmak Ýçin:
+
+1-Yüklenecek Paketler:
+	+Install-Package Microsoft.EntityFrameworkCore
+	Bu paket, EF Core'un ana kütüphanesidir. DB iþlemleri için projeye eklemek zorunludur.
+
+	+Install-Package Microsoft.EntityFrameworkCore.Tools
+	Bu paket, Ef Core CLI (Command Line Interface) komutlarýný kullanmamýzý saðlar. 
+
+	+Install-Package Microsoft.EntityFrameworkCore.SqlServer
+	Bu paket, Sql Server ile Ef Core kullanmak için gerekli olan saðlayýcýdýr. Zorunludur.
+	
+	+Install-Package Microsoft.EntityFrameworkCore.Design
+	Bu paket, tasarým zamaný hizmetlerini saðlar. Örneðin model sýnýflarýnýz için migration'lar oluþtururken veya tasarým zamaný özelliklerin kullanýrken gereklidir.
+	
+2-Entitylerin Oluþturulmasý:
+	Product ve Category classlarýný oluþturduk.
+
+3-Context Sýnýfýnýn Oluþturulmasý:
+	ApplicationDbContext:DbContext
+	OnConfiguring
+
+4-enable-migrations
+5-add-migration <FirstInitialize>
+6-update-database
+
+Entityler üzerinde herhangi bir deðiþiklik yapýldýðýnda aþaðýdaki komutlar sýrasý ile çalýþtýrýlýr:
+5-add-migration <FirstInitialize>
+6-update-database

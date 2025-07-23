@@ -1,0 +1,40 @@
+OOP (Object Oriented Programming)
+C# nesne tabanlý bir programlama dilidir.
+OOP, programlamada kullanýlan yapýlarý nesneler üzerinden düþünmeyi ve bu nesneler arasýndaki iliþkileri modellemeyi esas alýr.
+
+CLASS	: Nesne oluþturmak için hazýrlanmýþ bir plan yani bir taslaktýr. (template)
+
+NESNE (object)	: Sýnýftan türetilmiþ olan ve kendine özgü özellik (property) ve eylemleri (metodlarý) olabilen yapýlardýr.
+
+NEDEN OOP
+1-Belirli bir kodlama standardý oluþturmak için kullanýlýr.
+2-Kodlarý tek sefer yazarak sürekli olarak kullanabilmemizi saðlar. 
+3-Kod bloklari ile ilgili hatalar aldýðýmýzda tek bir yerden güncelleme yapabilmemizi saðlar.
+4-Bilgi gizliliði saðlanmasýna yardýmcý olur.
+
+CONSTRUCTOR (yapýcý metod)
+Yapýcý metod sýnýftan nesne üretilirken çalýþýr. Bu durumda nesne üretilirken istediðimiz özellikleri burada dýþarýdan alarak belirleyebiliriz. Sýnýf ismi ile ayný isimde olmalýdýr.
+
+POLYMORPHISM(çok biçimlilik)
+Base class ta bulunan bir metodun child classlarda override edilerek farklý bir içerikle kullanýlmasýdýr. 
+base class: metod virtual olarak iþaretlenir
+child class: override yazarak bir boþluk býrakýlýr ve metod seçilerek, metod govdesi deðiþtirilir.
+
+ENCAPSULATION (Kapsülleme)
+Encapsulation, oop de verilerin gizlenmesi ve bu verilere yalnýzca kontrollü bir þekilde eriþim saðlanmasý anlamýna gelir. Entity özelliklerini dýþ dünyaya direkt olarak açmak yerine get ve set metodlarý ile kontrollü eriþim saðlayabiliriz.
+
+INTERFACE
+OOP'de bir sýnýfýn sahip olmasý gereken özellikleri ve davranýþlarý (property, method) tanýmlayan soyut bir yapýdýr. Interface içerisinde metodlar sadece metod imzalarý ile tanýmlanýr. Metodlarýn gövdeleri bulunmaz. 
+
+Interface bir sýnýfa ne yapmasý gerektiðini söyler ancak nasýl yapmasý gerektiði söylemez.
+
+Soyut: Bir interface doðrudan bir nesne oluþturamaz.
+implement edilmelidir.
+Çoklu kalýtým desteði saðlar.
+
+Özellikleri:
+Metodlarýn sadece imzalarý interface içerisinde bulunabilir.
+Field bulunamaz.
+Bir sýnýf yalnýzca bir sýnýftan türetilebilir ancak bir sýnýf birden fazla interface'den türetilebilir.
+Bir interface baþka bir interfaceten türetilebilir.
+New keywordu kullanarak yapýlmaz. 

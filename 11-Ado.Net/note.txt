@@ -1,0 +1,29 @@
+ADO.NET
+
+.NET framework'un bir parçasý olarak microsoft tarafýndan geliþtirilmis ve çesitli veritabanlarýna baðlanmak için kullanýlan bir teknolojidir.
+
+Ado.Net farklý dblere baðlanmak için çeþitli veri saðlayýcýlar (provider) sunar.
+
+Bu providerlar arasýnda en yaygýn olarak kullanýlanlar þunlardýr:
+
+Sql Server:
+System.Data.SqlClient namespace'i altýnda bulunan SqlClient provider'ý
+
+Paket Yükleme:
+install-package Microsoft.Data.SqlClient
+
+OLEDB:
+System.Data.OleDB namespace'i altýnda bulunan OleDB veri saðlayýcýsýdýr. (Microsoft Access, Oracle)
+
+1-Connected Mimari
+	SqlConnection
+	SqlCommand
+	DataReader
+2-Disconnected Mimari
+	DataAdapter
+	Dataset
+	DataTable
+
+	Connection Strings:
+
+	https://www.connectionstrings.com/sql-server/
